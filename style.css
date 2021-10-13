@@ -11,56 +11,59 @@ body {
 
 h1 {
 	text-align: center;
-}
+	}
 
 .box {
-	padding: 20px;
 	border: 2px solid rgb(172, 172, 172);
 	border-radius: 10px;
 	text-align: center;
 	margin-bottom: 20px;
+	padding: 20px;
+	width: 100%;
 	}
 
-img {
+.boxy img {
 	border-radius: 50%;
+	height: 128px;
+	width: 128px;
 }
 
 p {
-	padding-bottom: 0;
+	margin: 0;
 }
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 640px) {
 	.boxy {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin: 0 20px 0 20px;
-		
-	}
+				}
+
 	.box {
 		flex: 0 0 calc((100% - 20px) / 2);
-		margin: 0 0 20px 0;
-	}
+		display: flex;
+		}
 	
-	p {
-		margin-bottom: 0;
-	}
-}
-
+	.obsah {
+			padding-left: 20px;
+			text-align: left;
+				}
+		}
+	
+		
 @media screen and (min-width: 960px) {
 	.boxy {
-		display: flex;
 		flex-wrap: nowrap;
-		justify-content: space-between;
 			}
-			
+
 	.box {
+		display: block;
 		flex: 0 0 calc((100% - 60px) / 4);
-		margin: 0;
+		
 	}
-	
-	p {
-		margin-bottom: 0;
+	.obsah {
+		text-align: center;
+		padding-left: 0;
 	}
 }
 /*
